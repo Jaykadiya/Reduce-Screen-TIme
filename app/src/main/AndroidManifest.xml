@@ -35,7 +35,10 @@
         <activity
             android:name=".NotificationReminder"
             android:exported="true" />
-
+        <activity
+            android:name=".Counter"
+            android:exported="true"
+            android:launchMode="singleTop"/>
         <activity
             android:name=".DarkMode"
             android:theme="@style/Theme.Kadiya"

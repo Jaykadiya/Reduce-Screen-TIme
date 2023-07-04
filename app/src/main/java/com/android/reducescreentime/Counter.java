@@ -30,7 +30,7 @@ public class Counter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_countdown_timer);
         if (savedInstanceState != null) {
             second = savedInstanceState.getInt("seconds");
             running = savedInstanceState.getBoolean("runnning");
