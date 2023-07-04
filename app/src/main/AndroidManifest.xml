@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.reducescreentime">
+
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.ReduceScreenTime">
+        <activity
+            android:name=".AboutUs"
+            android:exported="true" />
+        <activity android:name=".AboutAppActivity"
+            android:exported="true"/>
+        <activity android:name=".SetAlarm"
+            android:exported="true"/>
+        <activity
+            android:name=".NotificationReminder"
+            android:exported="true" />
+
+        <activity
+            android:name=".DarkMode"
+            android:theme="@style/Theme.Kadiya"
+            android:exported="true"/>
+        <activity
+            android:name=".Tips"
+            android:exported="true" />
+        <activity
+            android:name=".GenerateReport"
+            android:exported="true" />
+        <activity
+            android:name=".Counter"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".MenuActivity"
+            android:theme="@style/Theme.KKK"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/Theme.KKK"
+            android:exported="true"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RST"
+            android:exported="true"
+            android:theme="@style/Theme.KKK">
+
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+        <receiver android:name=".NotificationReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <receiver android:name=".Widget"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>

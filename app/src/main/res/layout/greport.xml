@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GenerateReport">
+
+
+    <TextView
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:hint="Enter Your Details from Usage Statistics"
+
+        android:textSize="18dp"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_marginTop="15dp"
+        android:layout_margin="12dp"
+        android:hint="Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAge"
+        android:layout_margin="12dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextHUA"
+        android:ems="10"
+        android:layout_margin="12dp"
+        android:hint="Highest used application Name"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent"
+        android:layout_margin="12dp"
+        android:ems="10"
+        android:hint=" highest Application usage percentage"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Generate Report"
+        android:layout_gravity="center"
+         />
+
+
+
+
+</LinearLayout>
